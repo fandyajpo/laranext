@@ -1,0 +1,37 @@
+[
+    {
+        "name": "Analisa dan Desain Sistem Informasi",
+        "kelas": "Rabu 19:50 - 22:20 R R209",
+        "enrolment": "J71u87"
+    },
+    {
+        "name": "Bisnis Berbasis Teknologi",
+        "kelas": "Senin 19:50 - 22:20 R R513",
+        "enrolment": "C65d69"
+    },
+    {
+        "name": "Data Integration",
+        "kelas": "Rabu 17:20 - 19:50 R Lab G",
+        "enrolment": "D81y75"
+    },
+    {
+        "name": "Jaringan Komputer Lanjut",
+        "kelas": "Senin 17:20 - 19:50 R Lab J",
+        "enrolment": "N70h74"
+    },
+    {
+        "name": "Pemrograman Web Framework",
+        "kelas": "Selasa 17:20 - 19:50 R Lab C",
+        "enrolment": "U65p76"
+    },
+    {
+        "name": "Pengantar Akuntansi",
+        "kelas": "Selasa 19:50 - 22:20 R R209",
+        "enrolment": "S77i76"
+    },
+    {
+        "name": "Tata Kelola dan Audit Teknologi Informasi",
+        "kelas": "Kamis 17:20 - 19:50 R R404",
+        "enrolment": "L89s75"
+    }
+]
