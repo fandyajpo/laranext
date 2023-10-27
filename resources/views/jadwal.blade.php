@@ -3,7 +3,8 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  @vite('resources/css/app.css')
+  <script src="https://cdn.tailwindcss.com"></script>
+ 
 </head>
 <body>
   <div class="bg-gradient-to-r from-teal-600 to-blue-500 w-full h-32 p-8 border-b border-teal-500 shadow-sm">
