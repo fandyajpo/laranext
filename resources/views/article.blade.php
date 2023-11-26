@@ -5,8 +5,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Document</title>
-
-
   @vite('resources/css/app.css')
 </head>
 
@@ -26,10 +24,10 @@
         @csrf
         @method('PATCH')
         <div>
-          <input id="name" require class="bg-white p-2 rounded-md" name="name" placeholder="Name" />
+          <input id="name" class="bg-white p-2 rounded-md" name="name" placeholder="Name" />
         </div>
         <div>
-          <input id="writer" require class="bg-white p-2 rounded-md" name="writer" placeholder="Writer" />
+          <input id="writer" class="bg-white p-2 rounded-md" name="writer" placeholder="Writer" />
         </div>
         <button type="submit" class="bg-white h-8 w-24 rounded-md">Submit</button>
       </form>
@@ -40,10 +38,10 @@
     <form action="/article" method="POST" class="space-y-2 pb-2">
       @csrf
       <div>
-        <input require class="bg-white p-2 rounded-md" placeholder="Name" />
+        <input id="name" class="bg-white p-2 rounded-md" name="name" placeholder="Name" />
       </div>
       <div>
-        <input require class="bg-white p-2 rounded-md" placeholder="Writer" />
+        <input id="writer" class="bg-white p-2 rounded-md" name="writer" placeholder="Writer" />
       </div>
       <button type="submit" class="bg-white h-8 w-24 rounded-md">Submit</button>
     </form>
@@ -78,7 +76,6 @@
   let modalOpen = false
 
   function articleForm(articleId, name, writer) {
-
     document.getElementById('name').value = name;
     document.getElementById('writer').value = writer;
     const form = document.getElementById('articleFormUpdate');

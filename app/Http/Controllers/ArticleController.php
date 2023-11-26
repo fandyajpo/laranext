@@ -2,9 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Config;
-
 use ArangoDBClient\Statement as ArangoStatement;
 use ArangoDBClient\Connection as ArangoConnection;
 
@@ -43,7 +41,7 @@ class ArticleController extends Controller
    {
       $name = request("name");
       $writer = request("writer");
-      if (empty($name) || empty($writer) || strlen($name) === 0 || strlen($writer) === 0) return redirect()->back();
+
       $statement = new ArangoStatement(
          $this->arangoConnection,
          [
@@ -58,7 +56,7 @@ class ArticleController extends Controller
          ]
       );
       $statement->execute();
-      return redirect("/article");
+      return redirect()->back();
    }
 
    public function updateArticle($key)
