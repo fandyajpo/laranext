@@ -4,7 +4,6 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script src="https://cdn.tailwindcss.com"></script>
- 
 </head>
 <body>
   <div class="bg-gradient-to-r from-teal-600 to-blue-500 w-full h-32 p-8 border-b border-teal-500 shadow-sm">
@@ -13,6 +12,7 @@
     <hr/>
   </div>
   <div class="p-8 space-y-8">  
+    @include('layouts.header')
     <center class="text-xl font-semibold">Jadwal Matakuliah</center>
     <hr class="border-black shadow-sm" />
     <table class="border-collapse border border-slate-500 w-full">
