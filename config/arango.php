@@ -5,7 +5,7 @@ use ArangoDBClient\UpdatePolicy as ArangoUpdatePolicy;
 use ArangoDBClient\Exception as ArangoException;
 
 return [
-    ArangoConnectionOptions::OPTION_DATABASE => '_system',
+    ArangoConnectionOptions::OPTION_DATABASE => env('ARANGO_DATABASE'),
     ArangoConnectionOptions::OPTION_ENDPOINT => env('ARANGO_URL'),
     ArangoConnectionOptions::OPTION_AUTH_TYPE => 'Basic',
     ArangoConnectionOptions::OPTION_AUTH_USER => env("ARANGO_USER"),

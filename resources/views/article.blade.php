@@ -8,11 +8,7 @@
   @vite('resources/css/app.css')
 </head>
 
-
-
 <body class="bg-black">
-
-
   <div id="modal" style="display: none;" class="bg-black/20 backdrop-blur-sm absolute w-full h-full flex items-center justify-center">
     <div class="w-1/4 h-2/4 bg-white p-4">
       <button onclick="closeModal()" class="w-6 h-6">
@@ -100,20 +96,6 @@
       document.getElementById('modal').style.display = "none"
     }
   }
-
-  //   async function getArticle() {
-  //     try {
-  //       const request = await fetch("/articles")
-  //       const result = await request.json()
-
-  //       console.log(result)
-  //       return result
-  //     } catch (error) {
-  //       return
-  //     }
-  //   }
-  //   getArticle()
-  // 
 </script>
 
 </html>
